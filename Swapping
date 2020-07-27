@@ -1,0 +1,22 @@
+//SWAPPING
+
+#include<stdio.h>
+ int main()
+{
+int a,b;
+printf("Enter the two numbers:");
+scanf("%d%d",&a,&b);
+printf("\n Before swap a=%d b=%d",a,b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("\n After swap a=%d b=%d",a,b);
+return 0;
+}
+
+OUTPUT=>
+
+Enter the two numbers:10 20
+
+ Before swap a=10 b=20
+ After swap a=20 b=10
