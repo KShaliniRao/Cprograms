@@ -1,0 +1,43 @@
+//PROGRAM USING SWITCH CASE
+
+#include<stdio.h>
+
+void main()
+{
+  int choice;
+
+  printf("MENU \n1.Maggi Rs 30\n2.Fried Rice Rs 50\n3.Paratha Rs.40\n4.Noodles Rs 35\n5.Chole Bature Rs 55");
+  printf("\n Enter your choice:");
+  scanf("%d",&choice);
+
+  switch(choice)
+  {
+      case 1:printf("\nFood Item- Maggi\nPrice= Rs 30");
+          break;
+      case 2:printf("\nFood Item- Fried Rice\nPrice= Rs 50");
+          break;
+      case 3:printf("\nFood Item- Paratha\nPrice= Rs 40");
+          break;
+      case 4:printf("\nFood Item- Noodles\nPrice= Rs 35");
+          break;
+      case 5:printf("\nFood Item- Chole Bature\nPrice= Rs 55");
+          break;
+      default:printf("Use the default case.");
+
+  }
+
+}
+
+
+OUTPUT=>
+
+MENU
+1.Maggi Rs 30
+2.Fried Rice Rs 50
+3.Paratha Rs.40
+4.Noodles Rs 35
+5.Chole Bature Rs 55
+ Enter your choice:1
+
+Food Item- Maggi
+Price= Rs 30
