@@ -1,0 +1,35 @@
+// PROGRAM TO ASSIGN GRADES BASED ON THE MARKS ENTERED
+
+#include<stdio.h>
+
+int main()
+{
+  int marks;
+
+  printf("Enter your marks:");
+  scanf("%d",&marks);
+
+  if(marks>=85&&marks<=100)
+      printf("\n Grade A");
+  else if(marks>=70&&marks<=84)
+      printf("\n Grade B");
+  else if(marks>=55&&marks<=69)
+      printf("\n Grade C");
+  else if(marks>=40&&marks<=54)
+      printf("\n Grade D");
+  else
+      printf("\n Grade F");
+
+return 0;
+
+}
+
+OUTPUT=>
+
+ Enter your marks:87
+
+ Grade A
+ 
+ Enter your marks:30
+
+ Grade F
