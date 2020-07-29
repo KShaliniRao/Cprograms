@@ -1,0 +1,76 @@
+//PROGRAM TO ENTER AND DISPLAY EMPLOYEE DETAILS USING STRUCTURES
+
+#include <stdio.h>
+
+struct employee
+{
+    char    name[30];
+    int     age;
+    char    phno[10];
+    float   salary;
+}emp[12];
+
+int main()
+{
+   printf("\nEnter details :\n");
+
+    for(int i=0;i<3;++i)
+    {
+    printf("\nName:");
+    scanf("%s",&emp[i].name);
+    printf("\nAge:");
+    scanf("%d",&emp[i].age);
+    printf("\nPhone number:");
+    scanf("%s",&emp[i].phno);
+    printf("\nSalary:");
+    scanf("%f",&emp[i].salary);
+    }
+
+   printf("\nEntered details:");
+   printf("\nName\tAge\tPhone Number\t\tSalary\n");
+
+    for(int i=0;i<3;++i)
+    {
+    printf("%s\t",emp[i].name);
+    printf("%d\t",emp[i].age);
+    printf("%s\t\t",emp[i].phno);
+    printf("%f\n",emp[i].salary);
+    }
+
+    return 0;
+}
+
+
+OUTPUT=>
+
+Enter details :
+
+Name:Chirag
+
+Age:24
+
+Phone number:1234567788
+
+Salary:20000
+
+Name:Arnav
+
+Age:31
+
+Phone number:1234567891
+
+Salary:56000
+
+Name:Shivam
+
+Age:45
+
+Phone number:8881101111
+
+Salary:30500
+
+Entered details:
+Name    Age     Phone Number            Salary
+Chirag  24      1234567788            20000.000000
+Arnav   31      1234567891            56000.000000
+Shivam  45      8881101111            30500.000000
